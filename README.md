@@ -41,7 +41,7 @@ JavaScriptで文字を検索してハイライト用の要素を付与するコ�
 
 4. CSS settings
 
-  Set any CSS to the element set for highlighting and the class.
+     Set any CSS to the element set for highlighting and the class.
 
 # An example usage would be:
 
