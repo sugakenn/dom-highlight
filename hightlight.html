@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      span.highlight {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="search-area">
+      <p>Suppose here is the document you want to search for</p>
+      <p><span>sear</span><span>ch-target</span></p>
+    </div>
+    <script src="./dom-highlight.js"></script>
+    <script>
+      window.onload = () => {
+        // careate instance
+        let h = new HighlightString();
+
+        // highlightString(keyword, [element], [tag name], [class name])
+        document.body.appendChild(
+          h.highlightString("search"),
+          document.getElementById("search-area")
+        );
+      };
+    </script>
+  </body>
+</html>
