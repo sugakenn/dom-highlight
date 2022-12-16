@@ -5,39 +5,43 @@ JavaScriptで文字を検索してハイライト用の要素を付与するコ�
 
 
 # Usage
-- code download
 
-Please download the js file on this site.
-- Import on HTML
+1. code download
 
-Load that script somewhere in the head or body of your HTML.
-- Add to script
+   Please download the js file on this site.
 
-Write a script for processing, write it in a place that will be executed after the js file is loaded.
+2. Import on HTML
 
-Call the highlightString method from an instance of HighlightString.
+   Load that script somewhere in the head or body of your HTML.
 
-The argument at this time is as follows.
+3. Add to script
 
-  - Search target character (required)
-  - Search target element
+   Write a script for processing, write it in a place that will be executed after the js file is loaded.
+
+   Call the highlightString method from an instance of HighlightString.
+
+   The argument at this time is as follows.
+
+   - Search target character (required)
+   - Search target element
   
-     If omitted, the first body element will be searched.
+      If omitted, the first body element will be searched.
 
-  - decorative elements
+   - decorative elements
    
-    Set the tag name of the element to decorate the found characters. The default is span.
-  - decoration class
+      Set the tag name of the element to decorate the found characters. The default is span.
+      
+   - decoration class
 
-    Set the class name of the element to decorate the found characters. Default is highlights.
+      Set the class name of the element to decorate the found characters. Default is highlights.
 
-Returns an element that clones the original element and adds an element for highlighting to the return value.
+   Returns an element that clones the original element and adds an element for highlighting to the return value.
 
-If you call the getOriginalData method after executing the highlightString method, you can get a clone of the element in the previous generation.
+   If you call the getOriginalData method after executing the highlightString method, you can get a clone of the element in the previous generation.
 
-- CSS settings
+4. CSS settings
 
-Set any CSS to the element set for highlighting and the class.
+  Set any CSS to the element set for highlighting and the class.
 
 # An example usage would be:
 
@@ -70,6 +74,5 @@ Set any CSS to the element set for highlighting and the class.
       };
     &lt;/script&gt;
   &lt;/body&gt;
-&lt;/html&gt;
-</pre></div>
+&lt;/html&gt;</pre></div>
 
