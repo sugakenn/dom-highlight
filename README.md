@@ -74,5 +74,5 @@ JavaScriptで文字を検索してハイライト用の要素を付与するコ�
       };
     &lt;/script&gt;
   &lt;/body&gt;
-&lt;/html&gt;</pre></div>
+&lt;/html&gt;</code></pre></div>
 
