@@ -1,0 +1,15 @@
+{
+  "name": "dom_highlight",
+  "version": "1.0.0",
+  "description": "Pure JS and small script that inserts elements for highlight to the DOM",
+  "main": "./src/dom-highlight.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "uglifyjs -m -c -o ./dist/dom-highlight.min.js ./src/dom-highlight.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "uglify-js": "^3.17.4"
+  }
+}
