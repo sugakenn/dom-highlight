@@ -45,34 +45,37 @@ JavaScriptで文字を検索してハイライト用の要素を付与するコ�
 
 # An example usage would be:
 
-<div><pre><code>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-  &lt;head&gt;
-    &lt;style&gt;
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
       span.highlight {
         background-color: blue;
       }
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;div id="search-area"&gt;
-      &lt;p&gt;Suppose here is the document you want to search for&lt;/p&gt;
-      &lt;p&gt;&lt;span&gt;sear&lt;/span&gt;&lt;span&gt;ch-target&lt;/span&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;script src="./dom-highlight.min.js"&gt;&lt;/script&gt;
-    &lt;script&gt;
-      window.onload = () =&gt; {
+    </style>
+  </head>
+  <body>
+    <div id="search-area">
+      <p>Suppose here is the document you want to search for</p>
+      <p><span>sear</span><span>ch-target</span></p>
+    </div>
+    <script src="./dom-highlight.min.js"></script>
+    <script>
+      window.onload = () => {
         // careate instance
         let h = new HighlightString();
 
-        // highlightString(keyword, [element], [tag name], [class name])
         document.body.appendChild(
           h.highlightString("search"),
           document.getElementById("search-area")
         );
+        
+        // full param sample
+        // highlightString(keyword, document.getElementById('search-area'), "span", "require-highlight");
+     
       };
-    &lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre></div>
-
+    </script>
+  </body>
+</html>
+```
