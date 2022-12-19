@@ -18,14 +18,14 @@
         // careate instance
         let h = new HighlightString();
 
-        document.body.appendChild(
-          h.highlightString("search"),
+        let el = h.highlightString(
+          "search",
           document.getElementById("search-area")
         );
-        
+        document.body.appendChild(el);
+
         // full param sample
         // highlightString(keyword, document.getElementById('search-area'), "span", "require-highlight");
-     
       };
     </script>
   </body>
