@@ -1,5 +1,5 @@
 # dom-highlight
-Dynamic highlighting of web content
+Pure JS and small script that inserts elements for highlight to the DOM
 
 JavaScriptで文字を検索してハイライト用の要素を付与するコードです。日本語の解説は[ブログ:「ブラウザのHTMLをJSで動的にハイライト」](https://nanbu.marune205.net/2022/12/html-highlight-with.html?m=1)に載せています。
 
@@ -8,7 +8,7 @@ JavaScriptで文字を検索してハイライト用の要素を付与するコ�
 
 1. code download
 
-   Please download the js file on this site.
+   Please download the dist/dom-highlight.min.js file on this site.
 
 2. Import on HTML
 
@@ -60,7 +60,7 @@ JavaScriptで文字を検索してハイライト用の要素を付与するコ�
       &lt;p&gt;Suppose here is the document you want to search for&lt;/p&gt;
       &lt;p&gt;&lt;span&gt;sear&lt;/span&gt;&lt;span&gt;ch-target&lt;/span&gt;&lt;/p&gt;
     &lt;/div&gt;
-    &lt;script src="./dom-highlight.js"&gt;&lt;/script&gt;
+    &lt;script src="./dom-highlight.min.js"&gt;&lt;/script&gt;
     &lt;script&gt;
       window.onload = () =&gt; {
         // careate instance
