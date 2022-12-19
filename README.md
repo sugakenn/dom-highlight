@@ -68,10 +68,8 @@ JavaScriptで文字を検索してハイライト用の要素を付与するコ�
 
         // call highlightString method with keyword and target DOM
         // return clone element with highlighted element
-        document.body.appendChild(
-          h.highlightString("search"),
-          document.getElementById("search-area")
-        );
+        let el =   h.highlightString("search"),document.getElementById("search-area"));
+        document.body.appendChild(el);
         
         // full param sample
         // highlightString("keyword", document.getElementById('search-area'), "span", "require-highlight");
