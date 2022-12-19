@@ -18,6 +18,7 @@
         // careate instance
         let h = new HighlightString();
 
+        // call highlightString method, return clone element with highlighted tag. 
         let el = h.highlightString(
           "search",
           document.getElementById("search-area")
@@ -25,7 +26,7 @@
         document.body.appendChild(el);
 
         // full param sample
-        // highlightString(keyword, document.getElementById('search-area'), "span", "require-highlight");
+        // highlightString("keyword", document.getElementById('search-area'), "span", "require-highlight");
       };
     </script>
   </body>
