@@ -12,17 +12,20 @@
       <p>Suppose here is the document you want to search for</p>
       <p><span>sear</span><span>ch-target</span></p>
     </div>
-    <script src="./dom-highlight.js"></script>
+    <script src="./dom-highlight.min.js"></script>
     <script>
       window.onload = () => {
         // careate instance
         let h = new HighlightString();
 
-        // highlightString(keyword, [element], [tag name], [class name])
         document.body.appendChild(
           h.highlightString("search"),
           document.getElementById("search-area")
         );
+        
+        // full param sample
+        // highlightString(keyword, document.getElementById('search-area'), "span", "require-highlight");
+     
       };
     </script>
   </body>
