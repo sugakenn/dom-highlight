@@ -45,7 +45,7 @@ JavaScriptで文字を検索してハイライト用の要素を付与するコ�
 
 # An example usage would be:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
